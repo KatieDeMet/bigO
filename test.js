@@ -1,5 +1,3 @@
-function squareEveryDigit(num) {
-    return Number(('' + num).split('').map(val => val * val).join(''));
-}
+const squareEveryDigit = num => Number(('' + num).split('').map(val => val * val).join(''))
 
-squareEveryDigit(946)
+console.log(squareEveryDigit(946))
