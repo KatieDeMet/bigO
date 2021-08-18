@@ -134,11 +134,11 @@ function printFirstTwoNames(array) {
 
 // Starting Code:
 function squareEveryDigit(number) {
-  let numArr = (""+number).split("")
-  for(let i = 0; i < numArr.length; i++) {
-    numArr[i] = Math.pow(numArr[i], 2)
-  }
-  let newNum = parseInt(numArr.join(''))
+  //Coerces number to a string and then transforms it into an array
+  let numArr = (''+number).split("")
+  //Squares each element in array and turns it back into a string that's converted back to number
+  let newNum = Number(numArr.map(num => num*num).join(''))
+  console.log(newNum)
   return newNum
 }
 
